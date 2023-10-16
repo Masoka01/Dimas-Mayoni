@@ -1045,18 +1045,8 @@ video {
   transition-duration: 150ms;
 }
 
-.transition-transform {
-  transition-property: transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .duration-300 {
   transition-duration: 300ms;
-}
-
-.duration-500 {
-  transition-duration: 500ms;
 }
 
 .ease-in-out {
@@ -1065,6 +1055,7 @@ video {
 
 body {
   font-family: "inter", sans-serif;
+  overflow-x: hidden;
 }
 
 .navbar-fixed {
@@ -1102,27 +1093,6 @@ body {
 .hamburger-active > span:nth-child(3) {
   --tw-rotate: -45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-/* Tambahkan animasi slide-in-from-left ke CSS Anda */
-
-@keyframes slide-in-from-left {
-  0% {
-    transform: translateX(-100%);
-    /* Mulai dari luar layar sebelah kiri */
-  }
-
-  100% {
-    transform: translateX(0);
-    /* Akhir di tengah layar */
-  }
-}
-
-/* Tambahkan class animate-slide-in-from-left ke Tailwind CSS Anda */
-
-.animate-slide-in-from-left {
-  animation: slide-in-from-left 0.5s ease-in-out;
-  /* Sesuaikan durasi dan timing function sesuai kebutuhan */
 }
 
 .hover\:border-primary:hover {

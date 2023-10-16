@@ -4,6 +4,7 @@
 
 body {
   font-family: "inter", sans-serif;
+  overflow-x: hidden;
 }
 
 .navbar-fixed {
@@ -25,19 +26,4 @@ body {
 
 .hamburger-active > span:nth-child(3) {
   @apply -rotate-45;
-}
-
-/* Tambahkan animasi slide-in-from-left ke CSS Anda */
-@keyframes slide-in-from-left {
-  0% {
-    transform: translateX(-100%); /* Mulai dari luar layar sebelah kiri */
-  }
-  100% {
-    transform: translateX(0); /* Akhir di tengah layar */
-  }
-}
-
-/* Tambahkan class animate-slide-in-from-left ke Tailwind CSS Anda */
-.animate-slide-in-from-left {
-  animation: slide-in-from-left 0.5s ease-in-out; /* Sesuaikan durasi dan timing function sesuai kebutuhan */
 }
